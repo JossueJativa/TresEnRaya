@@ -1,15 +1,24 @@
 # TresEnRaya
-Tres en Raya 
 Integrantes: Enrique Merizalde, Andres Loza, Jossue Jativa, Jaime Mendoza
-
+---
 ## Descripción del Juego:
 Tres en raya es un juego de 2 jugadores, que se juega sobre una matriz de 3 filas x 3 columnas. El juego consiste en que uno de los jugadores utiliza "X" y el otro "O" en distintas posiciones de la matriz segun el turno correspondiente. El primer jugador en conseguir tener 3 de sus figuras, ya sea "X" o "O", de manera vertical, horizontal o diagonal, habra ganado el juego. Si ninguno gana, se considera un empate. 
 
+
 ## Explicar las principales rutinas 
 Las principales rutinas que posee este codigo son: 
-* Minmax: Esta es una funcion int, por lo tanto devuelve un entero. Esta utiliza las variables scroe y bestScore. Al inicioo esta funcin valida si 
+* ShowBoard: Esta funcion vacía mostrará el tablero de 3 filas x 3 columnas donde se jugará Tres en Raya.
+* ShowInstructions: Esta funcion vacía muestra la tabla con valores del 1 al 9 indicando al usuario como jugar Tres en Raya, tomando en cuenta se utilizaran los respectivos numeros del 1 a 9 para mostrar las 9 diferentes posiciones en las que puede jugar el usuario. 
+* Initialise: Esta funcion vacía inicializa el tablero vacio 
+* DeclareWinner: Esta funcion vacía nos permit delarar el ganador de la partida de 3 en raya
+* RowCrossed: Esta funcion booleana devolvera verdadero si alguna de las filas se cruza con la jugada del mismo jugador, sino devolvera falso 
+* ColumnCrossed: Esta funcion booleana devolvera verdadero si alguna de las columnas se cruza con la jugada del mismo jugador, sino devolvera falso 
+* DiagonalCrossed: Esta funcion booleana que devolvera verdadero si alguna de las diagonales se cruza la jugada del mismo jugador, sino devolvera falso 
+* GameOver: Esta funcion booleana devolverá verdadero si e juego finaliza y sino devolvera falso.
+* Minmax: 
 * Bestmove: 
 * PlayTresEnRaya:
+* Main
 
 
 ## Tabla de tiempos en mejores y peores casos
@@ -21,6 +30,7 @@ Al jugar tres en raya existen los mejores y los peores casos, es decir donde los
 
 
 ## Tabla Estudio Combinatorio del Juego (Arbol de posibilidades)
+
 
 ## Instrucciones para ejecutar en Windows y Linux  
 
