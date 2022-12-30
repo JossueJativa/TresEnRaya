@@ -40,7 +40,7 @@ void showInstructions()
 // Funcion para incializar el juego
 void initialise(char board[][SIDE])
 {
-	// Inicialmente el tablero estÃ¡ vacÃ­o
+	// Inicialmente el tablero esta vacio
 	for (int i=0; i<SIDE; i++)
 	{
 		for (int j=0; j<SIDE; j++)
@@ -274,54 +274,31 @@ void playTresEnRaya(int whoseTurn)
 
 int main(int argc, char const *argv[])
 {
-    int opt;
-
- 
+    int opcion;
 
     while (true) {
 
- 
+    printf("BIENVENIDO A TRES EN RAYA\n1) Iniciar Juego\n2) Salir\nIngrese una opción: ");
 
-        printf("1) Jugar\n2) Salir\nIngrese una opción: ");
-
- 
-
-        scanf("%d", &opt);
-
- 
-
-        switch (opt)
-        {
-            case 1:
+        scanf("%d", &opcion);
+        
+        while(opcion==1 || opcion==2){
+            if(opcion==1){
                 printf("1) La máquina comienza\n2) El jugador comienza\nIngrese una opción: ");
-                scanf("%d", &opt);
+                scanf("%d", &opcion);
 
- 
 
-                if (opt < 1 || opt > 2) {
+                if (opcion < 1 || opcion > 2) {
                     printf("Opción no valida\n");
                     break;
                 }
 
- 
-
-                playTresEnRaya(opt);
-                break;
-
- 
-
-            case 2:
-                printf("Gracias por jugar\n");
+                playTresEnRaya(opcion);
+            }
+            else if(opcion==2){
+                printf("Has salido del juego. Adios");
                 return 0;
-
- 
-
-            default:
-                printf("Opción no valida\n");
-                break;
+            }
         }
-
- 
-
-    }
+     }
 }
