@@ -27,7 +27,7 @@ void showBoard(char board[][SIDE])
 // Funcion que muestra las instrucciones
 void showInstructions()
 {
-	printf("\nElija una celda del 1 al 9 como se indica a continuación y juegue\n\n");
+	printf("\nElija una celda del 1 al 9 como se indica a continuaciÃ³n y juegue\n\n");
 
 	printf("\t\t\t 1 | 2 | 3 \n");
 	printf("\t\t\t-----------\n");
@@ -40,7 +40,7 @@ void showInstructions()
 // Funcion para incializar el juego
 void initialise(char board[][SIDE])
 {
-	// Inicialmente el tablero está vacío
+	// Inicialmente el tablero estÃ¡ vacÃ­o
 	for (int i=0; i<SIDE; i++)
 	{
 		for (int j=0; j<SIDE; j++)
@@ -57,7 +57,7 @@ void declareWinner(int whoseTurn)
 		printf("Humano GANO\n");
 }
 
-// Una función que devuelve true si alguna de las filas
+// Una funciÃ³n que devuelve true si alguna de las filas
 // se cruza con la jugada del mismo jugador
 bool rowCrossed(char board[][SIDE])
 {
@@ -71,7 +71,7 @@ bool rowCrossed(char board[][SIDE])
 	return(false);
 }
 
-// Una función que devuelve true si alguna de las columnas
+// Una funciÃ³n que devuelve true si alguna de las columnas
 // se cruza con la jugada del mismo jugador
 bool columnCrossed(char board[][SIDE])
 {
@@ -85,7 +85,7 @@ bool columnCrossed(char board[][SIDE])
 	return(false);
 }
 
-// Una función que devuelve true si alguna de las diagonales
+// Una funciÃ³n que devuelve true si alguna de las diagonales
 // se cruza con la jugada del mismo jugador
 bool diagonalCrossed(char board[][SIDE])
 {
@@ -248,7 +248,7 @@ void playTresEnRaya(int whoseTurn)
 			}
 			else if(board[x][y] != ' ' && n<9 && n>=0)
 			{
-				printf("\nLa posicion esta� ocupada, seleccione una casilla cualquiera de las disponibles\n\n");
+				printf("\nLa posicion esta¡ ocupada, seleccione una casilla cualquiera de las disponibles\n\n");
 			}
 			else if(n<0 || n>8)
 			{
@@ -270,4 +270,58 @@ void playTresEnRaya(int whoseTurn)
 
 		declareWinner(whoseTurn);
 	}
+}
+
+int main(int argc, char const *argv[])
+{
+    int opt;
+
+ 
+
+    while (true) {
+
+ 
+
+        printf("1) Jugar\n2) Salir\nIngrese una opción: ");
+
+ 
+
+        scanf("%d", &opt);
+
+ 
+
+        switch (opt)
+        {
+            case 1:
+                printf("1) La máquina comienza\n2) El jugador comienza\nIngrese una opción: ");
+                scanf("%d", &opt);
+
+ 
+
+                if (opt < 1 || opt > 2) {
+                    printf("Opción no valida\n");
+                    break;
+                }
+
+ 
+
+                playTresEnRaya(opt);
+                break;
+
+ 
+
+            case 2:
+                printf("Gracias por jugar\n");
+                return 0;
+
+ 
+
+            default:
+                printf("Opción no valida\n");
+                break;
+        }
+
+ 
+
+    }
 }
