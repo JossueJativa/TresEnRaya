@@ -15,10 +15,10 @@ Las principales rutinas que posee este codigo son:
 * ColumnCrossed: Esta funcion booleana devolvera verdadero si alguna de las columnas se cruza con la jugada del mismo jugador, sino devolvera falso 
 * DiagonalCrossed: Esta funcion booleana que devolvera verdadero si alguna de las diagonales se cruza la jugada del mismo jugador, sino devolvera falso 
 * GameOver: Esta funcion booleana devolverá verdadero si e juego finaliza y sino devolvera falso.
-* Minmax: 
-* Bestmove: 
-* PlayTresEnRaya:
-* Main
+* Minmax: Esta funcion int devuelve un entero, seteando incilmente el score a cero y el bestscore a cero. Luego se verifica si la partida ya ha terminado o no. Si la partida no ha ternimado se ejecuta un algoritmo que nos devolver el bestScore.
+* Bestmove: Esta funcion calcula el mejor movimiento y devuelve un entero. Se tilizan dos ciclos for, uno para recorrer las filas de la matriz y uno para recorrer las columnas de la matriz, y luego se calcula el mejor movimiento devolviendo x*3+y;
+* PlayTresEnRaya: Esta es la funcion principal del programa y es vacia, la cual permite como tal jugar tres en raya, ya utiliza todas las demas funciones dentro de ella para pdoer ejecutar el juego.
+* Main Esta funcion es el main del prograa, es decir donde corre, la cual nos preguntará si deseamos jugar o salir, y luego si deseamos que la maquina comience o que el usuaurio comince jugando, y dependiendo de esto se ejecutará el juego. 
 
 
 ## Tabla de tiempos en mejores y peores casos
@@ -30,6 +30,7 @@ Al jugar tres en raya existen los mejores y los peores casos, es decir donde los
 
 
 ## Tabla Estudio Combinatorio del Juego (Arbol de posibilidades)
+El juego de Tres en Raya tiene muchas posibilidades para poder 
 
 
 ## Instrucciones para ejecutar en Windows y Linux  
