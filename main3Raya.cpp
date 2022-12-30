@@ -282,7 +282,7 @@ int main(int argc, char const *argv[])
 
         scanf("%d", &opcion);
         
-        while(opcion==1 || opcion==2){
+        
             if(opcion==1){
                 printf("1) La máquina comienza\n2) El jugador comienza\nIngrese una opción: ");
                 scanf("%d", &opcion);
@@ -299,6 +299,6 @@ int main(int argc, char const *argv[])
                 printf("Has salido del juego. Adios");
                 return 0;
             }
-        }
+        
      }
 }
