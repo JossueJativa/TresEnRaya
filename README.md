@@ -30,7 +30,13 @@ Al jugar tres en raya existen los mejores y los peores casos, es decir donde los
 
 
 ## Tabla Estudio Combinatorio del Juego (Arbol de posibilidades)
-El juego de Tres en Raya tiene muchas posibilidades para poder 
+El juego de Tres en Raya tiene muchas posibilidades para poder ganar, y de esto depende si el jugador o la máquina comienza primero. Suponiendo que el Jugador es X y la máquina O, en total hay unicmente 138 posiciones finales. Si empiezna las X, hay 91 posibilidades de que el Jugador gane, 44 posibilidades en las que la computadora gane y unicamente 3 en la que exista un empate; y todo esto viceversa si empieza la Maquina, es decir comienzan los O. 
+
+Para armar un arbol de posibilidades tomando en cuenta esto, se debe considerar que se utiliza el algoritmo de Minmax, el cual se basa en un conjunto de datos que conforman contrucciones logicas basadas en nodos y sus conecciones. El algoritmo minmax ayuda a elegir el mojor movimiento, tomando en cuenta que se elegirá el peor movimiento para ti por parte del contrario, ya que la finalidad de ambos jugadores, es ganar el juego. El algoritmo Minmax es recursivo por lo que va regresando hacia atras, comunicando a su nodo superiro cual es el mejor nodo hoja alcanzado ahsta ese momento. 
+
+![image](https://user-images.githubusercontent.com/121683973/210115686-5deba4d2-c911-4881-bced-a8efdf1fdeb5.png)
+
+Si se decide armar el arbol de posibilidades desde cero del Tres en Raya, se debera iniciar con un tablero vacio, y las 9 posibilidades en las que el usuario ingrese su icono, ya sea X o O, y luego sera el turno del siguiente usuario, unicamente con 8 posibilidades para ingresar su icono, y asi sucesivamente hasta que todos los espacios esten llenos. 
 
 
 ## Instrucciones para ejecutar en Windows y Linux  
