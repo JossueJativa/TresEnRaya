@@ -67,7 +67,10 @@ Para ejectar el programa en windows se puede proceder de tres diferentes formas:
 * CMD: Primero se debe abrir el terminal de linux, y descargar el compilador. Para verificar si tenemos este, se debe escribir gcc --version para compilador de C y c++ --version para compilador de C++. Si no fueron encontrados los compiladores, se deben instalar. 
 1. Escribir en el terminal "sudo apt install gcc" e ingresar contraseña y completar la instalacion 
 2. Luego escribir en el termina "sudo apt get install g++" e ingresar contaseña y completar la instalacion. 
-3. 
+3. Luego ingresar a la ruta a la que queremos acceder, donde esta guardado nuestro archivo utilizando el comando cd 
+4. Listamos todos loa archivos que se encuentren en el dicorectorio con ls
+5. Luego escribimos "g++ nombreprograma.cpp -o NombreDelEjecutable.out" se da eter, y listo se ha creado el ejecutable
+6. Finalmente, corremos el ejecutable NombreDelEjecutable.out con el comando "./NombreDelEjecutable.out" y damos enter, y listo ya corre el programa. 
 
 * Online GDB: Se puede utilizar el compilador online, en el sigiente enlace: https://www.onlinegdb.com/
 1. Ingresar al enlace
