@@ -42,9 +42,36 @@ Si se decide armar el arbol de posibilidades desde cero del Tres en Raya, se deb
 ## Instrucciones para ejecutar en Windows y Linux  
 
 ### Windows:
-Para ejectar el programa en windows se puede proceder de tres diferentes formas 
-* IDE: Se puede descargar y utilizar un IDE, como Visual Studio Code para correr el programa
-* CMD: Por otro lado se puede utilizar la linea de comandos dw windows para 
+Para ejectar el programa en windows se puede proceder de tres diferentes formas:
 
+* IDE: Se puede descargar y utilizar un IDE, como Visual Studio Code para correr el programa, se debe instalar el IDE de preferencia, con sus respectivos plugins para compilar cierto lenguaje y finalmente se deberá abrir el archivo que se desea ejecutar y correrlo. 
 
+* CMD: Por otro lado se puede utilizar la linea de comandos de Windows para ejecutar el archivo. Para esto se instalará un compilador externo llamado G++
+1. Descargar e instalar el compilador Mingw del siguiente enlace https://sourceforge.net/projects/mingw/files/latest/download?source=files tomando en cuenta que se deben descargar los compiladores de C y C++
+2. Para configurar el compilador ir a las proppiedades del sistema, configuraciones avanzadas del sistema, y luego ir a configuracion de variables de entorno. Se puede utilizar el compilador ya sea en variables del sistema o variables de usuario, dependiendo de lo que se quiera. 
+3. Finalmente para compilar algun codigo, se debe saber donde esta el codigo e ir a la consola y cambiar de directorio a la ruta donde se encuentre el programa que se desea compilar en C++ y se escribe "g++ nombreArchivo -o nombreADarAlEjecutable" y luego abrimos el archivo .exe en esa capeta y listo ya corre el archivo. 
 
+* Online GDB: Se puede utilizar el compilador online, en el sigiente enlace: https://www.onlinegdb.com/
+1. Ingresar al enlace
+2. Importar el codigo desde tu PC al compilador online
+3. Seleccionar el lenguaje para compilar "C++"
+4. Finalmente dar click en "Run"
+5. Y listo ya esta corriendo el programa. 
+
+--- 
+### Linux 
+Para ejectar el programa en windows se puede proceder de tres diferentes formas: 
+
+* IDE: Se puede descargar y utilizar un IDE, como Visual Studio Code para correr el programa, se debe instalar el IDE de preferencia, con sus respectivos plugins para compilar cierto lenguaje y finalmente se deberá abrir el archivo que se desea ejecutar y correrlo. 
+
+* CMD: Primero se debe abrir el terminal de linux, y descargar el compilador. Para verificar si tenemos este, se debe escribir gcc --version para compilador de C y c++ --version para compilador de C++. Si no fueron encontrados los compiladores, se deben instalar. 
+1. Escribir en el terminal "sudo apt install gcc" e ingresar contraseña y completar la instalacion 
+2. Luego escribir en el termina "sudo apt get install g++" e ingresar contaseña y completar la instalacion. 
+3. 
+
+* Online GDB: Se puede utilizar el compilador online, en el sigiente enlace: https://www.onlinegdb.com/
+1. Ingresar al enlace
+2. Importar el codigo desde tu PC al compilador online
+3. Seleccionar el lenguaje para compilar "C++"
+4. Finalmente dar click en "Run"
+5. Y listo ya esta corriendo el programa. 
