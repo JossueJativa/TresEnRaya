@@ -41,6 +41,10 @@ Si se decide armar el arbol de posibilidades desde cero del Tres en Raya, se deb
 
 ## Instrucciones para ejecutar en Windows y Linux  
 
+### Windows:
+Para ejectar el programa en windows se puede proceder de tres diferentes formas 
+* IDE: Se puede descargar y utilizar un IDE, como Visual Studio Code para correr el programa
+* CMD: Por otro lado se puede utilizar la linea de comandos dw windows para 
 
 
 
