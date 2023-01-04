@@ -26,6 +26,8 @@ Al jugar tres en raya existen los mejores y los peores casos, es decir donde los
 * Humano: Para los humanos, en los mejores casos, usualmente el tiempo que se demoran en tomar una decision en base a la partida que se esta jugando son de 10 a 20 segundos. Por otro lado, en los peores casos, las personas se toman un maximo tiempo de 1 minuto para tomar la decision de su siguiente movimiento. 
 * Máquina: Para la Computadora, los mejores y peores casos usualmente toman relativamente el mismo tiempo en tomar una desicion para el siguiente movimiento, ya sea en un mejor o peor resultado, debido a que las maquinas siguen una serie de pasos o algoritmos establecidos que permiten definir de manera rapida la mejor forma de jugar la partida. Usualmente este tiempo es menor a 1 segundo.
 
+* Para saber cuánto demora un juego en ejecutarse de manera exitosa en ejecutarse, se debe ver mayormente el tiempo de respuesta del Usuario o el Humano con el que se está jugando, ya que el tiempo mínimo de respuesta de una persona es de 0,25 segundos frente a un estímulo visual, y el número máximo de posiciones asignadas para poner en el “x” o el “o” son 5, sabiendo que la computadora se demora milisegundos en responder, se calculara el tiempo de respuesta del humano para saber el tiempo que se puede demorar de forma mínima un juego de 3 en raya, llegando a ser 0,25 por 5 posiciones máximas, donde es igual a 1 segundo con 25 milisegundos si es rápida la partida, pero esto se puede alargar mediante el humano demore y cuando toca después de la maquita hay 4 movimientos máximos que hacer, sabiendo eso tenemos 0,25 por 4 posiciones máximas teniendo igual a una partida de 1 segundo.
+
 > Nota: En ambos casos podemos percatarnos de que los tiempos son bajos, pero los de la computadora son mucho mas bajos que el de los humanos, y esto es debido a que unicamente se juega tres en raya sobre una matriz de 3 filas x 3 columnas, por lo que a medida que hipteticmanete vaya incrementando el tamaño de esta matriz, el tiempo que tomará en tomar una desicion ya sea la computadora o el humano, ira incrementando.
 
 
@@ -33,6 +35,8 @@ Al jugar tres en raya existen los mejores y los peores casos, es decir donde los
 El juego de Tres en Raya tiene muchas posibilidades para poder ganar, y de esto depende si el jugador o la máquina comienza primero. Suponiendo que el Jugador es X y la máquina O, en total hay unicmente 138 posiciones finales. Si empiezna las X, hay 91 posibilidades de que el Jugador gane, 44 posibilidades en las que la computadora gane y unicamente 3 en la que exista un empate; y todo esto viceversa si empieza la Maquina, es decir comienzan los O. 
 
 Para armar un arbol de posibilidades tomando en cuenta esto, se debe considerar que se utiliza el algoritmo de Minmax, el cual se basa en un conjunto de datos que conforman contrucciones logicas basadas en nodos y sus conecciones. El algoritmo minmax ayuda a elegir el mojor movimiento, tomando en cuenta que se elegirá el peor movimiento para ti por parte del contrario, ya que la finalidad de ambos jugadores, es ganar el juego. El algoritmo Minmax es recursivo por lo que va regresando hacia atras, comunicando a su nodo superiro cual es el mejor nodo hoja alcanzado ahsta ese momento. 
+
+
 
 ![image](https://user-images.githubusercontent.com/121683973/210115686-5deba4d2-c911-4881-bced-a8efdf1fdeb5.png)
 
